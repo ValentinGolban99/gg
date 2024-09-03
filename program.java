@@ -62,6 +62,18 @@ public class program {
         System.out.printf("Привет, %s!", name);
         iScanner.close();
 
+        // Управляющие конструкции:
+        // Если/Иначе
+        int ad = 1;
+        int ba = 2;
+        int c;
+        if (ad > ba) {
+            c = ad;
+        } else {
+            c = ba;
+        }
+        System.out.println(c);
+
 
    }
     
