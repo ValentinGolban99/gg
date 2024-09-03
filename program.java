@@ -12,6 +12,8 @@
 
 //Структура простой программы:
 
+import java.util.Scanner;// Импорт для получения данных из терминала
+
 public class program {
    public static void main(String[] args) {
        System.out.println("--Пример текста--");
@@ -32,6 +34,33 @@ public class program {
 
        // Неявная типизация:
        var i = 123;
+
+       // Массивы(Одномерные):
+       int[] arr = new int[10];
+       System.out.println(arr.length);// Вывод длинны массива (10)
+
+       arr = new int[] {1, 2, 3, 4, 5};
+       System.out.println(arr.length);// Вывод длинны массива (5)
+
+       System.out.println(arr[3]);// Обращение к массиву
+
+       arr[3] = 13;// Присвоение значения элементу массива
+
+       // Многомерные массивы
+       int[] arra[] = new int[3][5];
+       for (int[] line : arra) {
+           for(int item : line) {
+               System.out.printf("%d ", item);
+            }
+        
+        }
+
+        // Получение данных из терминала:
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("name: ");
+        String name = iScanner.nextLine();
+        System.out.printf("Привет, %s!", name);
+        iScanner.close();
 
 
    }
